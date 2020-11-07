@@ -20,9 +20,7 @@ class BaseAPI<T: TargetType>{
         
         AF.request(target.baseURL + target.path, method: method, parameters: parameters.0, encoding: parameters.1, headers: headers).responseJSON { [weak self] (response) in
             
-            guard let self = self else {
-                return
-            }
+            
             guard let statusCode = response.response?.statusCode else {
                 
                 completion(.failure(NSError()))
