@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24F02057528743E4A38D7CB7 /* Pods_NetworkLayerAlamofireWithCodableTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 662EBDAC357CCD0FAEEDCE71 /* Pods_NetworkLayerAlamofireWithCodableTests.framework */; };
+		D27A856400B3B5CD73546166 /* Pods_NetworkLayerAlamofireWithCodable_NetworkLayerAlamofireWithCodableUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D7835587205A6632789FDA /* Pods_NetworkLayerAlamofireWithCodable_NetworkLayerAlamofireWithCodableUITests.framework */; };
 		E286480E255607AA00CFD33D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E286480D255607AA00CFD33D /* AppDelegate.swift */; };
 		E2864810255607AA00CFD33D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E286480F255607AA00CFD33D /* SceneDelegate.swift */; };
 		E2864812255607AA00CFD33D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2864811255607AA00CFD33D /* ViewController.swift */; };
@@ -15,6 +17,11 @@
 		E286481A255607AE00CFD33D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2864818255607AE00CFD33D /* LaunchScreen.storyboard */; };
 		E2864825255607AF00CFD33D /* NetworkLayerAlamofireWithCodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2864824255607AF00CFD33D /* NetworkLayerAlamofireWithCodableTests.swift */; };
 		E2864830255607AF00CFD33D /* NetworkLayerAlamofireWithCodableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E286482F255607AF00CFD33D /* NetworkLayerAlamofireWithCodableUITests.swift */; };
+		E286483F255607EB00CFD33D /*  TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E286483E255607EB00CFD33D /*  TargetType.swift */; };
+		E286484125560BF000CFD33D /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E286484025560BF000CFD33D /* BaseAPI.swift */; };
+		E28648452556231D00CFD33D /* UsersNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28648442556231D00CFD33D /* UsersNetworking.swift */; };
+		E2864847255626AC00CFD33D /* UsersAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2864846255626AC00CFD33D /* UsersAPI.swift */; };
+		FA7157A506E79D19587CC176 /* Pods_NetworkLayerAlamofireWithCodable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD4E868C4CCAFB646B9EF256 /* Pods_NetworkLayerAlamofireWithCodable.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		301E8D18B89D3B3B897A4C11 /* Pods-NetworkLayerAlamofireWithCodableTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkLayerAlamofireWithCodableTests.debug.xcconfig"; path = "Target Support Files/Pods-NetworkLayerAlamofireWithCodableTests/Pods-NetworkLayerAlamofireWithCodableTests.debug.xcconfig"; sourceTree = "<group>"; };
+		37E646659179B0922D0EAE76 /* Pods-NetworkLayerAlamofireWithCodable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkLayerAlamofireWithCodable.debug.xcconfig"; path = "Target Support Files/Pods-NetworkLayerAlamofireWithCodable/Pods-NetworkLayerAlamofireWithCodable.debug.xcconfig"; sourceTree = "<group>"; };
+		3C6A2C02565332B21205E02E /* Pods-NetworkLayerAlamofireWithCodable-NetworkLayerAlamofireWithCodableUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkLayerAlamofireWithCodable-NetworkLayerAlamofireWithCodableUITests.release.xcconfig"; path = "Target Support Files/Pods-NetworkLayerAlamofireWithCodable-NetworkLayerAlamofireWithCodableUITests/Pods-NetworkLayerAlamofireWithCodable-NetworkLayerAlamofireWithCodableUITests.release.xcconfig"; sourceTree = "<group>"; };
+		44D7835587205A6632789FDA /* Pods_NetworkLayerAlamofireWithCodable_NetworkLayerAlamofireWithCodableUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkLayerAlamofireWithCodable_NetworkLayerAlamofireWithCodableUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B513DEDBA3B06C53BF9259D /* Pods-NetworkLayerAlamofireWithCodableTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkLayerAlamofireWithCodableTests.release.xcconfig"; path = "Target Support Files/Pods-NetworkLayerAlamofireWithCodableTests/Pods-NetworkLayerAlamofireWithCodableTests.release.xcconfig"; sourceTree = "<group>"; };
+		662EBDAC357CCD0FAEEDCE71 /* Pods_NetworkLayerAlamofireWithCodableTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkLayerAlamofireWithCodableTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD4E868C4CCAFB646B9EF256 /* Pods_NetworkLayerAlamofireWithCodable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkLayerAlamofireWithCodable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E286480A255607AA00CFD33D /* NetworkLayerAlamofireWithCodable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkLayerAlamofireWithCodable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E286480D255607AA00CFD33D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E286480F255607AA00CFD33D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +63,12 @@
 		E286482B255607AF00CFD33D /* NetworkLayerAlamofireWithCodableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkLayerAlamofireWithCodableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E286482F255607AF00CFD33D /* NetworkLayerAlamofireWithCodableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayerAlamofireWithCodableUITests.swift; sourceTree = "<group>"; };
 		E2864831255607AF00CFD33D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E286483E255607EB00CFD33D /*  TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " TargetType.swift"; sourceTree = "<group>"; };
+		E286484025560BF000CFD33D /* BaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
+		E28648442556231D00CFD33D /* UsersNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersNetworking.swift; sourceTree = "<group>"; };
+		E2864846255626AC00CFD33D /* UsersAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersAPI.swift; sourceTree = "<group>"; };
+		F3EE41D4B18803F40D4F5C02 /* Pods-NetworkLayerAlamofireWithCodable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkLayerAlamofireWithCodable.release.xcconfig"; path = "Target Support Files/Pods-NetworkLayerAlamofireWithCodable/Pods-NetworkLayerAlamofireWithCodable.release.xcconfig"; sourceTree = "<group>"; };
+		FD3F2726BF208D55E42168BB /* Pods-NetworkLayerAlamofireWithCodable-NetworkLayerAlamofireWithCodableUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkLayerAlamofireWithCodable-NetworkLayerAlamofireWithCodableUITests.debug.xcconfig"; path = "Target Support Files/Pods-NetworkLayerAlamofireWithCodable-NetworkLayerAlamofireWithCodableUITests/Pods-NetworkLayerAlamofireWithCodable-NetworkLayerAlamofireWithCodableUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA7157A506E79D19587CC176 /* Pods_NetworkLayerAlamofireWithCodable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24F02057528743E4A38D7CB7 /* Pods_NetworkLayerAlamofireWithCodableTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +92,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D27A856400B3B5CD73546166 /* Pods_NetworkLayerAlamofireWithCodable_NetworkLayerAlamofireWithCodableUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08110B371B6B6D240E42F806 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD4E868C4CCAFB646B9EF256 /* Pods_NetworkLayerAlamofireWithCodable.framework */,
+				44D7835587205A6632789FDA /* Pods_NetworkLayerAlamofireWithCodable_NetworkLayerAlamofireWithCodableUITests.framework */,
+				662EBDAC357CCD0FAEEDCE71 /* Pods_NetworkLayerAlamofireWithCodableTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4F6361579023B3FC157A50E4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37E646659179B0922D0EAE76 /* Pods-NetworkLayerAlamofireWithCodable.debug.xcconfig */,
+				F3EE41D4B18803F40D4F5C02 /* Pods-NetworkLayerAlamofireWithCodable.release.xcconfig */,
+				FD3F2726BF208D55E42168BB /* Pods-NetworkLayerAlamofireWithCodable-NetworkLayerAlamofireWithCodableUITests.debug.xcconfig */,
+				3C6A2C02565332B21205E02E /* Pods-NetworkLayerAlamofireWithCodable-NetworkLayerAlamofireWithCodableUITests.release.xcconfig */,
+				301E8D18B89D3B3B897A4C11 /* Pods-NetworkLayerAlamofireWithCodableTests.debug.xcconfig */,
+				5B513DEDBA3B06C53BF9259D /* Pods-NetworkLayerAlamofireWithCodableTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E2864801255607A900CFD33D = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +129,8 @@
 				E2864823255607AF00CFD33D /* NetworkLayerAlamofireWithCodableTests */,
 				E286482E255607AF00CFD33D /* NetworkLayerAlamofireWithCodableUITests */,
 				E286480B255607AA00CFD33D /* Products */,
+				4F6361579023B3FC157A50E4 /* Pods */,
+				08110B371B6B6D240E42F806 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +147,8 @@
 		E286480C255607AA00CFD33D /* NetworkLayerAlamofireWithCodable */ = {
 			isa = PBXGroup;
 			children = (
+				E2864843255622FA00CFD33D /* Users */,
+				E286483D255607BB00CFD33D /* Base */,
 				E286480D255607AA00CFD33D /* AppDelegate.swift */,
 				E286480F255607AA00CFD33D /* SceneDelegate.swift */,
 				E2864811255607AA00CFD33D /* ViewController.swift */,
@@ -128,6 +178,24 @@
 			path = NetworkLayerAlamofireWithCodableUITests;
 			sourceTree = "<group>";
 		};
+		E286483D255607BB00CFD33D /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E286483E255607EB00CFD33D /*  TargetType.swift */,
+				E286484025560BF000CFD33D /* BaseAPI.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		E2864843255622FA00CFD33D /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				E28648442556231D00CFD33D /* UsersNetworking.swift */,
+				E2864846255626AC00CFD33D /* UsersAPI.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +203,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2864834255607AF00CFD33D /* Build configuration list for PBXNativeTarget "NetworkLayerAlamofireWithCodable" */;
 			buildPhases = (
+				DA955D7B8B75BF92DE672EEF /* [CP] Check Pods Manifest.lock */,
 				E2864806255607A900CFD33D /* Sources */,
 				E2864807255607A900CFD33D /* Frameworks */,
 				E2864808255607A900CFD33D /* Resources */,
+				C8F85F13CDD416725F944712 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +222,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E2864837255607AF00CFD33D /* Build configuration list for PBXNativeTarget "NetworkLayerAlamofireWithCodableTests" */;
 			buildPhases = (
+				EA71F6D3138D85D535639D85 /* [CP] Check Pods Manifest.lock */,
 				E286481C255607AF00CFD33D /* Sources */,
 				E286481D255607AF00CFD33D /* Frameworks */,
 				E286481E255607AF00CFD33D /* Resources */,
@@ -170,9 +241,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E286483A255607AF00CFD33D /* Build configuration list for PBXNativeTarget "NetworkLayerAlamofireWithCodableUITests" */;
 			buildPhases = (
+				592A2B738651599684C3353D /* [CP] Check Pods Manifest.lock */,
 				E2864827255607AF00CFD33D /* Sources */,
 				E2864828255607AF00CFD33D /* Frameworks */,
 				E2864829255607AF00CFD33D /* Resources */,
+				F5330812FD40FA61BBDDCB91 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,14 +327,121 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		592A2B738651599684C3353D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NetworkLayerAlamofireWithCodable-NetworkLayerAlamofireWithCodableUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8F85F13CDD416725F944712 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetworkLayerAlamofireWithCodable/Pods-NetworkLayerAlamofireWithCodable-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetworkLayerAlamofireWithCodable/Pods-NetworkLayerAlamofireWithCodable-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NetworkLayerAlamofireWithCodable/Pods-NetworkLayerAlamofireWithCodable-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA955D7B8B75BF92DE672EEF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NetworkLayerAlamofireWithCodable-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA71F6D3138D85D535639D85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NetworkLayerAlamofireWithCodableTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5330812FD40FA61BBDDCB91 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetworkLayerAlamofireWithCodable-NetworkLayerAlamofireWithCodableUITests/Pods-NetworkLayerAlamofireWithCodable-NetworkLayerAlamofireWithCodableUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NetworkLayerAlamofireWithCodable-NetworkLayerAlamofireWithCodableUITests/Pods-NetworkLayerAlamofireWithCodable-NetworkLayerAlamofireWithCodableUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NetworkLayerAlamofireWithCodable-NetworkLayerAlamofireWithCodableUITests/Pods-NetworkLayerAlamofireWithCodable-NetworkLayerAlamofireWithCodableUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E2864806255607A900CFD33D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E2864812255607AA00CFD33D /* ViewController.swift in Sources */,
+				E286483F255607EB00CFD33D /*  TargetType.swift in Sources */,
 				E286480E255607AA00CFD33D /* AppDelegate.swift in Sources */,
 				E2864810255607AA00CFD33D /* SceneDelegate.swift in Sources */,
+				E28648452556231D00CFD33D /* UsersNetworking.swift in Sources */,
+				E286484125560BF000CFD33D /* BaseAPI.swift in Sources */,
+				E2864847255626AC00CFD33D /* UsersAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +612,7 @@
 		};
 		E2864835255607AF00CFD33D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37E646659179B0922D0EAE76 /* Pods-NetworkLayerAlamofireWithCodable.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +631,7 @@
 		};
 		E2864836255607AF00CFD33D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3EE41D4B18803F40D4F5C02 /* Pods-NetworkLayerAlamofireWithCodable.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +650,7 @@
 		};
 		E2864838255607AF00CFD33D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 301E8D18B89D3B3B897A4C11 /* Pods-NetworkLayerAlamofireWithCodableTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +673,7 @@
 		};
 		E2864839255607AF00CFD33D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B513DEDBA3B06C53BF9259D /* Pods-NetworkLayerAlamofireWithCodableTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +696,7 @@
 		};
 		E286483B255607AF00CFD33D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD3F2726BF208D55E42168BB /* Pods-NetworkLayerAlamofireWithCodable-NetworkLayerAlamofireWithCodableUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +717,7 @@
 		};
 		E286483C255607AF00CFD33D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C6A2C02565332B21205E02E /* Pods-NetworkLayerAlamofireWithCodable-NetworkLayerAlamofireWithCodableUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
