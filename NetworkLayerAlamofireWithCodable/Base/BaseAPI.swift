@@ -20,6 +20,9 @@ class BaseAPI<T: TargetType>{
         
         AF.request(target.baseURL + target.path, method: method, parameters: parameters.0, encoding: parameters.1, headers: headers).responseJSON { [weak self] (response) in
             
+            guard let self = self else {
+                return
+            }
             guard let statusCode = response.response?.statusCode else {
                 
                 completion(.failure(NSError()))
@@ -28,26 +31,26 @@ class BaseAPI<T: TargetType>{
             if statusCode == 200 {
                 
                 // Successful request
-                guard let jsonResponse =  try? response.result.get() else {
+                guard let theJsonResponse =  try? response.result.get() else {
                     
                     // ADD Custom Error
                     completion(.failure(NSError()))
                     return
                 }
                 
-                guard let jsonData = try? JSONSerialization.data(withJSONObject: jsonResponse, options: []) else {
+                guard let theJsonData = try? JSONSerialization.data(withJSONObject: theJsonResponse, options: []) else {
                     
                     // ADD Custom Error
                     completion(.failure(NSError()))
                     return
                 }
-                guard let jsonObj = try? JSONDecoder().decode(M.self, from: jsonData) else {
+                guard let theJsonObj = try? JSONDecoder().decode(M.self, from: theJsonData) else {
                     
                     // ADD Custom Error
                     completion(.failure(NSError()))
                     return
                 }
-                completion(.success(jsonObj))
+                completion(.success(theJsonObj))
             }else {
                  // ADD custom error base on status code 404 / 401 /
                 completion(.failure(NSError()))
