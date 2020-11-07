@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		24F02057528743E4A38D7CB7 /* Pods_NetworkLayerAlamofireWithCodableTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 662EBDAC357CCD0FAEEDCE71 /* Pods_NetworkLayerAlamofireWithCodableTests.framework */; };
 		D27A856400B3B5CD73546166 /* Pods_NetworkLayerAlamofireWithCodable_NetworkLayerAlamofireWithCodableUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D7835587205A6632789FDA /* Pods_NetworkLayerAlamofireWithCodable_NetworkLayerAlamofireWithCodableUITests.framework */; };
+		E25544E225575779008F5258 /* UsersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25544E125575779008F5258 /* UsersResponse.swift */; };
+		E25544E5255757D2008F5258 /* UsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25544E4255757D2008F5258 /* UsersModel.swift */; };
 		E286480E255607AA00CFD33D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E286480D255607AA00CFD33D /* AppDelegate.swift */; };
 		E2864810255607AA00CFD33D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E286480F255607AA00CFD33D /* SceneDelegate.swift */; };
 		E2864812255607AA00CFD33D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2864811255607AA00CFD33D /* ViewController.swift */; };
@@ -49,6 +51,8 @@
 		5B513DEDBA3B06C53BF9259D /* Pods-NetworkLayerAlamofireWithCodableTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkLayerAlamofireWithCodableTests.release.xcconfig"; path = "Target Support Files/Pods-NetworkLayerAlamofireWithCodableTests/Pods-NetworkLayerAlamofireWithCodableTests.release.xcconfig"; sourceTree = "<group>"; };
 		662EBDAC357CCD0FAEEDCE71 /* Pods_NetworkLayerAlamofireWithCodableTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkLayerAlamofireWithCodableTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD4E868C4CCAFB646B9EF256 /* Pods_NetworkLayerAlamofireWithCodable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkLayerAlamofireWithCodable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E25544E125575779008F5258 /* UsersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersResponse.swift; sourceTree = "<group>"; };
+		E25544E4255757D2008F5258 /* UsersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersModel.swift; sourceTree = "<group>"; };
 		E286480A255607AA00CFD33D /* NetworkLayerAlamofireWithCodable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkLayerAlamofireWithCodable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E286480D255607AA00CFD33D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E286480F255607AA00CFD33D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +126,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		E25544E3255757C1008F5258 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E25544E4255757D2008F5258 /* UsersModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		E2864801255607A900CFD33D = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +159,7 @@
 		E286480C255607AA00CFD33D /* NetworkLayerAlamofireWithCodable */ = {
 			isa = PBXGroup;
 			children = (
+				E25544E3255757C1008F5258 /* Models */,
 				E2864843255622FA00CFD33D /* Users */,
 				E286483D255607BB00CFD33D /* Base */,
 				E286480D255607AA00CFD33D /* AppDelegate.swift */,
@@ -192,6 +205,7 @@
 			children = (
 				E28648442556231D00CFD33D /* UsersNetworking.swift */,
 				E2864846255626AC00CFD33D /* UsersAPI.swift */,
+				E25544E125575779008F5258 /* UsersResponse.swift */,
 			);
 			path = Users;
 			sourceTree = "<group>";
@@ -442,6 +456,8 @@
 				E28648452556231D00CFD33D /* UsersNetworking.swift in Sources */,
 				E286484125560BF000CFD33D /* BaseAPI.swift in Sources */,
 				E2864847255626AC00CFD33D /* UsersAPI.swift in Sources */,
+				E25544E225575779008F5258 /* UsersResponse.swift in Sources */,
+				E25544E5255757D2008F5258 /* UsersModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

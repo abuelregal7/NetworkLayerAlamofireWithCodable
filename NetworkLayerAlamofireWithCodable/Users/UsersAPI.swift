@@ -8,8 +8,21 @@
 
 import Foundation
 
-class UsersAPI: BaseAPI<UsersNetworking> {
+protocol UsersAPIProtocol {
+    func getUsers(completion: @escaping (Result<UsersResponse?, NSError>) -> Void)
+}
+
+class UsersAPI: BaseAPI<UsersNetworking>, UsersAPIProtocol {
     
-    
+    //Mark:- Requests
+    func getUsers(completion: @escaping (Result<UsersResponse?, NSError>) -> Void) {
+        
+        self.fetchData(target: .getUsers, responseClass: UsersResponse.self) { (result) in
+            
+            completion(result)
+            
+        }
+        
+    }
     
 }
